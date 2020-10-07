@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <form action="reservation.php" method="post">
+    <h1>Book Maxi Van Online</h1>
+    <div id="r_button">
+
+      <input type="radio" id="Oneway" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+      <label>Oneway</label>
+
+      <input type="radio" id="Return" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+      <label>Return</label>
+    </div>
+    <!--  -->
+    <!-- Name  -->
+    <div class="elem-group">
+      <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+    </div>
+    <!-- Name End -->
+    <!-- Email and Phone  -->
+    <div class="elem-groups">
+      <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+    </div>
+    <div class="elem-groups">
+      <input type="tel" id="phone" name="visitor_phone" placeholder="+61 x xxxx xxxx"
+        pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+    </div>
+    <!--  Email and Phone End -->
+    <!-- Ori and Des -->
+    <div class="elem-groups1">
+      <input type="text" id="origin" name="visitor_email" placeholder="Origin" required>
+    </div>
+    <div class="elem-groups1">
+      <input type="text" id="destination" name="visitor_phone" placeholder="Destination"
+        pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+    </div>
+    <!-- Ori and Des End -->
+    <!-- Date and time-->
+    <div class="elem-groups1 inlined">
+      <input type="time" id="checkin_time" name="checkin" required>
+    </div>
+    <div class="elem-groups1 inlined">
+      <input type="Date" id="checkout_date" name="checkout" required>
+    </div>
+    <!-- Date and time End -->
+    <div class="elem-groups1 inlined">
+      <input type="number" id="adult" name="total_adults" placeholder="Number of Passengers" min="1" required>
+    </div>
+    <div class="elem-groups1 inlined">
+      <input type="number" id="Flight" name="Flight" placeholder="Flight" min="0" required>
+    </div>
+
+    <div class="elem-groups12">
+      <select id="Booking_Type" name="Booking Type" required>
+        <option value="Booking Type">Booking Type</option>
+        <option value="Booking">Booking</option>
+        <option value="Quotation">Quotation</option>
+      </select>
+    </div>
+    <div class="elem-groups12">
+      <select id="Vehicle_Class" name="Vehicle Class" required>
+        <option value="Vehicle Class">Vehicle Class</option>
+        <option value="Maxi Taxi">Maxi Taxi</option>
+        <option value="White Colour Van">White Colour Van</option>
+        <option value="White Colour Van">Mercedes-Benz 7 seater V class</option>
+      </select>
+    </div>
+    <div class="elem-groups12">
+      <select id="Seat_Class" name="Seat Class" required>
+        <option value="Seat Class">Seat Class</option>
+        <option value="Baby Seat">Baby Seat</option>
+        <option value="Not required">Not required</option>
+        <option value="1(+$15)">1(+$15)</option>
+      </select>
+    </div>
+
+
+    <button type="submit">Sumbit</button>
+
+  </form>
+
+  <script href="index.js">
+
+  </script>
+</body>
+
+</html>

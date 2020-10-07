@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html, body {
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 5%;
+  padding-right: 16%;
+  background-size:cover;
+}
+
+form{
+  border:solid;
+  color: #FF8C00;
+  padding: 7px;
+  width: 150%;
+  font-family: 'Roboto', sans-serif;
+}
+form h1{
+  text-align: center;
+  color: Black
+}
+#r_button{
+  color: black;
+  display: flex;
+  margin: 4%;
+  padding-right: 5%;
+}
+#r_button label{
+  margin-left: 5%;
+}
+#r_button input{
+  margin-left: 5%;
+}
+
+div.elem-group {
+  margin: 20px 0;
+}
+
+div.elem-groups1.inlined {
+  width: 49%;
+  display: inline-block;
+  float: left;
+  margin-left: 1%;
+}
+input, select{
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  width: 100%;
+  padding: 5px;
+}
+
+div.elem-groups.inlined input {
+  width: 20%;
+  display: inline-block;
+}
+hr {
+  border: 1px dotted #ccc;
+}
+
+button {
+
+  padding-left: 5;
+  height: 50px;
+  background: #FFD700;
+  width: 100%;
+  border: none;
+  color: white;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top:20px;
+}
+
+button:hover {
+  border: 2px solid black;
+}
+.elem-groups{
+  width: 49%;
+  display: inline-block;
+  float: left;
+  margin-left: 1%;
+}
+.elem-groups1{
+  padding-top: 5%;
+  width: 49%;
+  display: inline-block;
+  float: left;
+  margin-left: 1%;
+}
+.elem-groups12{
+  padding-top: 5%;
+  width: 32%;
+  display: inline-block;
+  float: left;
+  margin-left: 1%;
+}
